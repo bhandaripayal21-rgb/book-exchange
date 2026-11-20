@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Exchange Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Book Exchange Portal</h1>
+        <p>Exchange your old books with others</p>
+    </header>
+
+    <section class="form-container">
+        <h2>Add a Book</h2>
+
+        <input type="text" id="bookName" placeholder="Book Name">
+
+        <input type="text" id="ownerName" placeholder="Owner Name">
+
+        <select id="condition">
+            <option value="">Select Condition</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Fair</option>
+        </select>
+
+        <button onclick="addBook()">Add Book</button>
+    </section>
+
+    <section>
+        <h2>Available Books</h2>
+        <div id="bookList"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
